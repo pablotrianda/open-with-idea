@@ -1,27 +1,42 @@
-# Open with Idea
+# 🛠️ Open with Idea
 
-Open the current file with intelliJ IDEA, using this:
+Simple lua plugin for open the current file with intelliJ.
 
-```
-idea64.exe [--line <number>] [--column <number>] <file path ...>
-```
 
-## Instalation using [Lazy](https://github.com/folke/lazy.nvim)
-```Lua
-return {
-	"pablotrianda/open-with-idea",
-	config = true,
-	opts = {
-		binary = "~/Documents/ideaIU-2022.3/idea-IU-223.7571.182/bin/idea.sh "
-	}
+## 📦 Installation
+
+Install the plugin with your preferred package manager:
+
+### [Lazy](https://github.com/folke/lazy.nvim)
+
+```lua
+-- Lua
+{
+  "pablotrianda/open-with-idea",
+  config = true,
+  opts = {
+    binary = "~/Documents/ideaIU-2022.3/idea-IU-223.7571.182/bin/idea.sh "
+  }
 }
 ```
 
-## Using
+## ⚙️ Configuration
+
+```lua
+opts = {
+  binary = "" -- path to intellij binary
+} 
+```
+
+## 🚀 Usage
+
+Run the following command:
+
 ```sh
 :OpenWithIdea
 ```
 
-
 [Documentation](https://www.jetbrains.com/help/idea/opening-files-from-command-line.html#linux)
+
+
 
