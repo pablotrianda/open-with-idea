@@ -2,7 +2,6 @@ local Config = require("open-with-idea.config")
 local M = {}
 
 M.openWith = function()
-	--	print("Binary" .. Config.options.binary)
 	local current_line = vim.fn.line(".")
 	local current_column = vim.fn.col(".")
 	local current_file = vim.fn.expand('%:p')
