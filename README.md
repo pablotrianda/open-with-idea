@@ -7,7 +7,7 @@ idea64.exe [--line <number>] [--column <number>] <file path ...>
 ```
 
 ## Instalation using [Lazy](https://github.com/folke/lazy.nvim)
-```
+```Lua
 return {
 	"pablotrianda/open-with-idea",
 	config = true,
@@ -18,8 +18,8 @@ return {
 ```
 
 ## Using
-```
-:
+```sh
+:OpenWithIdea
 ```
 
 
